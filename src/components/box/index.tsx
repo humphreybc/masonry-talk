@@ -16,7 +16,9 @@ const Wrapper = styled(
   ({ color, height }: { color: string; height: number }) => ({
     alignItems: "center",
     backgroundColor: color,
+    color: "#fff",
     display: "flex",
+    fontSize: "64px",
     height,
     justifyContent: "center",
     width: "100%"
