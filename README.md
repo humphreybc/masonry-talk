@@ -18,4 +18,4 @@ A talk for SydCSS about the state of masonry layouts in 2019.
 - [@heydovetail/react-masonry-responsive](https://github.com/heydovetail/react-masonry-responsive)
 - [Say Hello to Houdini and the CSS Paint API](https://codersblock.com/blog/say-hello-to-houdini-and-the-css-paint-api/)
 - [CSS Houdini Experiments](https://css-houdini.rocks/)
-- [Houdini sample masonry layout](https://googlechromelabs.github.io/houdini-samples/layout-worklet/masonry/))
+- [Houdini sample masonry layout](https://googlechromelabs.github.io/houdini-samples/layout-worklet/masonry/)
