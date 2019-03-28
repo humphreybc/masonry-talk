@@ -13,3 +13,19 @@ export const COLORS = {
   orange: "#e46135",
   red: "#e44848"
 };
+
+export const COLORS_ARRAY = [
+  "#24124d",
+  "#f84f77",
+  "#a82d85",
+  "#512da8",
+  "#33539f",
+  "#5182f8",
+  "#1eb8c1",
+  "#009688",
+  "#91bb54",
+  "#ffb300",
+  "#bf6e33",
+  "#e46135",
+  "#e44848"
+];
