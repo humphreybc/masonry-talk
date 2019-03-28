@@ -2,6 +2,17 @@
 
 A talk for SydCSS about the state of masonry layouts in 2019.
 
+## Talk checklist
+
+- [x] Flex example
+- [x] Grid example
+- [x] Columns example
+- [ ] Table example
+- [ ] Position absolute example
+- [ ] CSS Houdini example
+- [ ] Title slide components
+- [ ] Intro / outro
+
 ## Constraints
 
 1. Items must be in a ‘brick’ layout, like Pinterest
