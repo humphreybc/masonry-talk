@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import ReactResizeDetector from "react-resize-detector";
 import { styled } from "typestyle-react";
-import { Props } from "../interfaces/props";
+import { Props } from "../types/props";
 
 const GAP = 32;
 
-export const MasonryAbsolute: React.FC<Props> = ({ items }) => {
+export const CustomColumns: React.FC<Props> = ({ items }) => {
   const [containerWidth, setContainerWidth] = useState(0);
   const minColumnWidth = 200;
   const margin = GAP / 2;

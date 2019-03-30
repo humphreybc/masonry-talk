@@ -1,11 +1,11 @@
 import React from "react";
 import { styled } from "typestyle-react";
-import { Props } from "../interfaces/props";
+import { Props } from "../types/props";
 
 const GAP = 32;
 const AUTO_ROWS = 0;
 
-export const MasonryGrid: React.FC<Props> = ({ items }) => (
+export const Grid: React.FC<Props> = ({ items }) => (
   <Container>
     {items.map((item, i) => (
       <Item

@@ -1,6 +1,6 @@
 import React from "react";
 import { styled } from "typestyle-react";
-import { Props } from "../interfaces/props";
+import { Props } from "../types/props";
 
 export const MasonryTable: React.FC<Props> = ({ items }) => {
   const columnCount = 5;

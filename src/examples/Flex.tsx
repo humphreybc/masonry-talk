@@ -1,8 +1,8 @@
 import React from "react";
 import { styled } from "typestyle-react";
-import { Props } from "../interfaces/props";
+import { Props } from "../types/props";
 
-export const MasonryFlex: React.FC<Props> = ({ items }) => (
+export const Flex: React.FC<Props> = ({ items }) => (
   <Container>
     {items.map((item, i) => (
       <Item key={i}>{item}</Item>

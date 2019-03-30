@@ -7,7 +7,8 @@ cssRule("*", {
 
 cssRule("body", {
   background: "#fff",
-  fontFamily: "sans-serif",
+  fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+  height: "100vh",
   margin: 0,
   padding: 48,
 });
