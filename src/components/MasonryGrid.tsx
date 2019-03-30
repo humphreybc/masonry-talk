@@ -1,9 +1,6 @@
 import React from "react";
 import { styled } from "typestyle-react";
-
-interface Props {
-  items: React.ReactNode[];
-}
+import { Props } from "../interfaces/props";
 
 const GAP = 32;
 const AUTO_ROWS = 0;

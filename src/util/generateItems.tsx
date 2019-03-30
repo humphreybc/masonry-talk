@@ -21,19 +21,16 @@ export const generateItems = (count: number) => {
   return items;
 };
 
-const Box = styled(
-  "div",
-  ({ color, height }: { color: string; height: number }) => ({
-    alignItems: "center",
-    backgroundColor: color,
-    borderRadius: "8px",
-    color: "#fff",
-    display: "flex",
-    fontSize: "48px",
-    fontWeight: 700,
-    height,
-    justifyContent: "center",
-    padding: "16px",
-    width: "100%",
-  }),
-);
+const Box = styled("div", ({ color, height }: { color: string; height: number }) => ({
+  alignItems: "center",
+  backgroundColor: color,
+  borderRadius: "8px",
+  color: "#fff",
+  display: "flex",
+  fontSize: "48px",
+  fontWeight: 700,
+  height,
+  justifyContent: "center",
+  padding: "16px",
+  width: "100%",
+}));

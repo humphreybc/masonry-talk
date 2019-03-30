@@ -1,14 +1,12 @@
 import React from "react";
 import { styled } from "typestyle-react";
-
-interface Props {
-  items: React.ReactNode[];
-}
+import { Props } from "../interfaces/props";
 
 export const MasonryTable: React.FC<Props> = ({ items }) => {
   const columnCount = 5;
 
   let rows: Array<Array<React.ReactNode>> = [];
+
   for (let i = 0; i < items.length; i++) {
     if (i % columnCount === 0) rows.push([]);
     rows[rows.length - 1].push(items[i]);

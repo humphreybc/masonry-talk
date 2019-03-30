@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import ReactResizeDetector from "react-resize-detector";
 import { styled } from "typestyle-react";
-
-interface Props {
-  items: React.ReactNode[];
-}
+import { Props } from "../interfaces/props";
 
 const GAP = 32;
 
