@@ -7,11 +7,15 @@ A talk for SydCSS about the state of masonry layouts in 2019.
 - [x] Flex example
 - [x] Grid example
 - [x] Columns example
-- [ ] Table example
 - [ ] Position absolute example
 - [ ] CSS Houdini example
 - [ ] Title slide components
 - [ ] Intro / outro
+
+## Other techniques
+
+- Using table and setting colspan (similar to grid)
+- Using position absolute and setting width / height appropriately
 
 ## Constraints
 

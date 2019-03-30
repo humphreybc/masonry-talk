@@ -15,12 +15,12 @@ export const MasonryFlex: React.FC<Props> = ({ items }) => (
 
 const Container = styled("div", {
   display: "flex",
-  // flexWrap: "wrap",
-  // justifyContent: "center",
-  // margin: "-32px",
+  flexWrap: "wrap",
+  justifyContent: "center",
+  margin: "-32px",
 });
 
 const Item = styled("div", {
-  // margin: "16px",
-  // width: "200px",
+  margin: "16px",
+  width: "200px",
 });

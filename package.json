@@ -29,6 +29,7 @@
     "typestyle-react": "^2.5.0"
   },
   "prettier": {
+    "printWidth": 128,
     "trailingComma": "all"
   }
 }
