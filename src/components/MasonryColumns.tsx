@@ -21,15 +21,21 @@ const Container = styled(
     columnGap: "32px",
   },
   media(
-    { minWidth: 500 },
+    { minWidth: 400 },
     {
       columnCount: 2,
     },
   ),
   media(
-    { minWidth: 1000 },
+    { minWidth: 800 },
     {
       columnCount: 4,
+    },
+  ),
+  media(
+    { minWidth: 1200 },
+    {
+      columnCount: 6,
     },
   ),
 );

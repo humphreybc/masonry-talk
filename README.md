@@ -7,7 +7,7 @@ A talk for SydCSS about the state of masonry layouts in 2019.
 - [x] Flex example
 - [x] Grid example
 - [x] Columns example
-- [ ] Position absolute example
+- [x] Position absolute example
 - [ ] CSS Houdini example
 - [ ] Title slide components
 - [ ] Intro / outro
