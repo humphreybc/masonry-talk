@@ -1,5 +1,6 @@
 import React from "react";
 import { styled } from "typestyle-react";
+import { COLORS } from "./colors";
 
 interface Props {
   text: string;
@@ -13,7 +14,7 @@ const Heading = styled("h1", {
   justifyContent: "center",
   height: "calc(100vh - 96px)",
   width: "100%",
-  color: "#24124d",
+  color: COLORS.indigo,
   fontSize: "128px",
   fontWeight: 700,
   lineHeight: "120px",

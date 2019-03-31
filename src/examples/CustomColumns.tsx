@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ReactResizeDetector from "react-resize-detector";
 import { styled } from "typestyle-react";
 import { Props } from "../types/props";
+import { Header } from "../util/Header";
 
 const GAP = 32;
 
@@ -14,18 +15,21 @@ export const CustomColumns: React.FC<Props> = ({ items }) => {
   const columns = sort(count, items);
 
   return (
-    <Container>
-      {columns.map((column, i) => (
-        <div key={i} style={{ flex: "1 1 auto", width: `${100 / columns.length}%` }}>
-          {column.map((item, j) => (
-            <div key={j} style={{ padding: margin }}>
-              {item}
-            </div>
-          ))}
-        </div>
-      ))}
-      <ReactResizeDetector handleWidth onResize={width => setContainerWidth(width)} />
-    </Container>
+    <>
+      <Header cssOnly={false} dynamic={true} layout={true} order={true} responsive={true} />
+      <Container>
+        {columns.map((column, i) => (
+          <div key={i} style={{ flex: "1 1 auto", width: `${100 / columns.length}%` }}>
+            {column.map((item, j) => (
+              <div key={j} style={{ padding: margin }}>
+                {item}
+              </div>
+            ))}
+          </div>
+        ))}
+        <ReactResizeDetector handleWidth onResize={width => setContainerWidth(width)} />
+      </Container>
+    </>
   );
 };
 

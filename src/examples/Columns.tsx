@@ -2,13 +2,17 @@ import React from "react";
 import { media } from "typestyle";
 import { styled } from "typestyle-react";
 import { Props } from "../types/props";
+import { Header } from "../util/Header";
 
 export const Columns: React.FC<Props> = ({ items }) => (
-  <Container>
-    {items.map((item, i) => (
-      <Item key={i}>{item}</Item>
-    ))}
-  </Container>
+  <>
+    <Header cssOnly={true} dynamic={true} layout={true} order={false} responsive={true} />
+    <Container>
+      {items.map((item, i) => (
+        <Item key={i}>{item}</Item>
+      ))}
+    </Container>
+  </>
 );
 
 const Container = styled(

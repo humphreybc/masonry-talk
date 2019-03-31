@@ -33,4 +33,5 @@ const Box = styled("div", ({ color, height }: { color: string; height: number })
   justifyContent: "center",
   padding: "16px",
   width: "100%",
+  transition: "height 500ms 500ms ease-in-out",
 }));

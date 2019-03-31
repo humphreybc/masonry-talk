@@ -2,15 +2,19 @@ import React from "react";
 import { media } from "typestyle";
 import { styled } from "typestyle-react";
 import { Props } from "../types/props";
+import { Header } from "../util/Header";
 
 const GAP = 32;
 
 export const Houdini: React.FC<Props> = ({ items }) => (
-  <Container>
-    {items.map((item, i) => (
-      <Item key={i}>{item}</Item>
-    ))}
-  </Container>
+  <>
+    <Header cssOnly={false} dynamic={true} layout={true} order={true} responsive={true} />
+    <Container>
+      {items.map((item, i) => (
+        <Item key={i}>{item}</Item>
+      ))}
+    </Container>
+  </>
 );
 
 const Container = styled(
