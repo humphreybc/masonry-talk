@@ -1,16 +1,14 @@
 import React from "react";
+import { generateItems } from "src/util/generateItems";
 import { media } from "typestyle";
 import { styled } from "typestyle-react";
-import { Props } from "../types/props";
 import { Header } from "../util/Header";
 
-const GAP = 32;
-
-export const Houdini: React.FC<Props> = ({ items }) => (
+export const Houdini: React.FC = () => (
   <>
     <Header cssOnly={false} dynamic={true} layout={true} order={true} responsive={true} />
     <Container>
-      {items.map((item, i) => (
+      {generateItems(25).map((item, i) => (
         <Item key={i}>{item}</Item>
       ))}
     </Container>
@@ -21,8 +19,8 @@ const Container = styled(
   "div",
   {
     display: "layout(masonry)",
-    margin: -GAP,
-    "--padding": GAP,
+    margin: -32,
+    "--padding": 32,
     "--columns": 1,
   },
   media(

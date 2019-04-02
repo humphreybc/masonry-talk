@@ -1,10 +1,11 @@
 import React from "react";
+import { generateItems } from "src/util/generateItems";
 import { styled } from "typestyle-react";
-import { Props } from "../types/props";
 import { Header } from "../util/Header";
 
-export const Table: React.FC<Props> = ({ items }) => {
+export const Table: React.FC = () => {
   const columnCount = 5;
+  const items = generateItems(25);
 
   let rows: Array<Array<React.ReactNode>> = [];
 

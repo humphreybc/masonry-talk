@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import ReactResizeDetector from "react-resize-detector";
+import { generateItems } from "src/util/generateItems";
 import { styled } from "typestyle-react";
-import { Props } from "../types/props";
 import { Header } from "../util/Header";
 
 const GAP = 32;
 
-export const CustomColumns: React.FC<Props> = ({ items }) => {
+export const CustomColumns: React.FC = () => {
   const [containerWidth, setContainerWidth] = useState(0);
   const minColumnWidth = 200;
   const margin = GAP / 2;
 
   const count = columnCount(containerWidth, GAP, minColumnWidth);
-  const columns = sort(count, items);
+  const columns = sort(count, generateItems(25));
 
   return (
     <>
@@ -35,7 +35,7 @@ export const CustomColumns: React.FC<Props> = ({ items }) => {
 
 const Container = styled("div", {
   display: "flex",
-  margin: -GAP / 2,
+  margin: -16,
 });
 
 function sort(count: number, items: React.ReactNode[]): Array<Array<React.ReactNode>> {

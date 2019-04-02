@@ -1,6 +1,5 @@
 import { storiesOf } from "@storybook/react";
 import React from "react";
-import { generateItems } from "src/util/generateItems";
 import { Columns } from "./examples/Columns";
 import { CustomColumns } from "./examples/CustomColumns";
 import { Flex } from "./examples/Flex";
@@ -12,60 +11,80 @@ import { SlideBulletList } from "./util/SlideBulletList";
 import { SlideContainer } from "./util/SlideContainer";
 import { SlideTitle } from "./util/SlideTitle";
 
-storiesOf("Slides", module)
+storiesOf("Talk", module)
   .add("Intro", () => (
     <SlideContainer>
+      <DocumentTitle title="Title" />
       <SlideTitle text="The State of CSS Masonry in 2019" />
     </SlideContainer>
   ))
   .add("Constraints", () => (
     <SlideContainer>
+      <DocumentTitle title="Constraints" />
       <SlideBulletList
         items={[
           "Brick layout like Pinterest",
           "Left-to-right order",
-          "Dynamic width / height items",
+          "Dynamic column width",
           "Responsive for mobile",
           "CSS only",
         ]}
       />
     </SlideContainer>
-  ));
-
-storiesOf("Examples", module)
+  ))
   .add("Flex", () => (
     <>
       <DocumentTitle title="Flex" />
-      <Flex items={generateItems(25)} />
+      <Flex />
     </>
   ))
   .add("Columns", () => (
     <>
       <DocumentTitle title="Columns" />
-      <Columns items={generateItems(25)} />
+      <Columns />
     </>
   ))
   .add("Custom columns", () => (
     <>
       <DocumentTitle title="Custom columns" />
-      <CustomColumns items={generateItems(25)} />
+      <CustomColumns />
     </>
   ))
   .add("Grid", () => (
     <>
       <DocumentTitle title="Grid" />
-      <Grid items={generateItems(25)} />
+      <Grid />
     </>
+  ))
+  .add("Houdini intro", () => (
+    <SlideContainer>
+      <DocumentTitle title="Houdini intro" />
+      <SlideBulletList
+        items={[
+          "Extends native CSS",
+          "Executed by browser pipeline",
+          "Removes need for polyfills",
+          "Still in development",
+          "css-houdini.rocks",
+        ]}
+      />
+    </SlideContainer>
   ))
   .add("Houdini", () => (
     <>
       <DocumentTitle title="Houdini" />
-      <Houdini items={generateItems(25)} />
+      <Houdini />
     </>
   ))
   .add("Table", () => (
     <>
       <DocumentTitle title="Table" />
-      <Table items={generateItems(25)} />
+      <Table />
     </>
+  ))
+  .add("Outro", () => (
+    <SlideContainer>
+      <DocumentTitle title="Outro" />
+      <SlideBulletList items={["Benjamin Humphrey", "humphreybc.com", "dovetailapp.com", "@hidovetail"]} />
+    </SlideContainer>
   ));

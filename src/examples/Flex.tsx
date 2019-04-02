@@ -1,13 +1,13 @@
 import React from "react";
+import { generateItems } from "src/util/generateItems";
 import { styled } from "typestyle-react";
-import { Props } from "../types/props";
 import { Header } from "../util/Header";
 
-export const Flex: React.FC<Props> = ({ items }) => (
+export const Flex: React.FC = () => (
   <>
     <Header cssOnly={true} dynamic={false} layout={false} order={true} responsive={true} />
     <Container>
-      {items.map((item, i) => (
+      {generateItems(25).map((item, i) => (
         <Item key={i}>{item}</Item>
       ))}
     </Container>

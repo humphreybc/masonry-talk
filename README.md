@@ -9,9 +9,11 @@ A talk for SydCSS about the state of masonry layouts in 2019.
 - [x] Columns example
 - [x] Custom columns
 - [x] CSS Houdini example
-- [ ] Title slide components
-- [ ] Checklist components
-- [ ] Intro and summary slides
+- [x] Title slide components
+- [x] Checklist components
+- [x] Intro and summary slides
+- [ ] Screenshot of Pinterest
+- [ ] Outro slide with name, website, @hidovetail
 
 ## Other techniques
 
@@ -33,6 +35,16 @@ A talk for SydCSS about the state of masonry layouts in 2019.
 - Worklets have limited scope and functionality and can’t access the DOM.
 - There are multiple parts to Houdini – the Layout API, Paint API, Parser API, etc.
 
+## Talk prep
+
+- [ ] Import houdini masonry worklet locally
+- [ ] Comment out all CSS and JS enhancements
+- [ ] Default columns count to 4 for Columns and Houdini
+- [ ] Use Firefox / Safari for non-Houdini support
+- [ ] Show screenshot of Pinterest
+- [ ] Hide file tree in VSCode
+- [ ] Zoom in in VSCode
+
 ## Houdini Pros
 
 - Gives you the freedom to create your own visual effects / layout.
@@ -43,7 +55,7 @@ A talk for SydCSS about the state of masonry layouts in 2019.
 - Solves future browser support issues by allowing developers to use new features before browsers implement them.
 - All five major browser vendors intend to support Houdini.
 
-## Houdinin Cons
+## Houdini Cons
 
 - Large pieces of Houdini are still in development.
 - Houdini itself requires good browser support before it can start alleviating future browser support issues.

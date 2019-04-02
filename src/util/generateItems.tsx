@@ -22,7 +22,7 @@ export const generateItems = (count: number) => {
 };
 
 const Box = styled("div", ({ color, height }: { color: string; height: number }) => ({
-  alignItems: "center",
+  alignItems: "flex-start",
   backgroundColor: color,
   borderRadius: "8px",
   color: "#fff",
@@ -31,7 +31,7 @@ const Box = styled("div", ({ color, height }: { color: string; height: number })
   fontWeight: 700,
   height,
   justifyContent: "center",
-  padding: "16px",
+  padding: "32px 16px",
   width: "100%",
   transition: "height 500ms 500ms ease-in-out",
 }));

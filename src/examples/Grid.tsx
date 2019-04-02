@@ -1,18 +1,17 @@
 import React from "react";
+import { generateItems } from "src/util/generateItems";
 import { styled } from "typestyle-react";
-import { Props } from "../types/props";
 import { Header } from "../util/Header";
 
 const GAP = 32;
 const AUTO_ROWS = 0;
 
-export const Grid: React.FC<Props> = ({ items }) => (
+export const Grid: React.FC = () => (
   <>
     <Header cssOnly={false} dynamic={true} layout={true} order={true} responsive={true} />
     <Container>
-      {items.map((item, i) => (
+      {generateItems(25).map((item, i) => (
         <Item
-          key={i}
           innerRef={item => {
             if (item !== null) {
               // Set the item to span across multiple rows based on the
@@ -27,6 +26,7 @@ export const Grid: React.FC<Props> = ({ items }) => (
               contents.style.height = "100%";
             }
           }}
+          key={i}
         >
           {item}
         </Item>
@@ -37,9 +37,9 @@ export const Grid: React.FC<Props> = ({ items }) => (
 
 const Container = styled("div", {
   display: "grid",
-  gridGap: GAP,
+  gridGap: 32,
   gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
-  gridAutoRows: AUTO_ROWS,
+  gridAutoRows: 0,
 });
 
 const Item = styled("div");

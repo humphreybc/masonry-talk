@@ -1,14 +1,14 @@
 import React from "react";
+import { generateItems } from "src/util/generateItems";
 import { media } from "typestyle";
 import { styled } from "typestyle-react";
-import { Props } from "../types/props";
 import { Header } from "../util/Header";
 
-export const Columns: React.FC<Props> = ({ items }) => (
+export const Columns: React.FC = () => (
   <>
     <Header cssOnly={true} dynamic={true} layout={true} order={false} responsive={true} />
     <Container>
-      {items.map((item, i) => (
+      {generateItems(25).map((item, i) => (
         <Item key={i}>{item}</Item>
       ))}
     </Container>

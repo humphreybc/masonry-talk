@@ -15,7 +15,7 @@ export const Header: React.FC<Props> = ({ cssOnly, dynamic, layout, order, respo
   <Container>
     <ConstraintCheckbox checked={layout} label="Brick layout" />
     <ConstraintCheckbox checked={order} label="Left-to-right" />
-    <ConstraintCheckbox checked={dynamic} label="Dynamic items" />
+    <ConstraintCheckbox checked={dynamic} label="Dynamic width" />
     <ConstraintCheckbox checked={responsive} label="Responsive" />
     <ConstraintCheckbox checked={cssOnly} label="CSS Only" />
   </Container>
@@ -24,14 +24,13 @@ export const Header: React.FC<Props> = ({ cssOnly, dynamic, layout, order, respo
 const Container = styled(
   "div",
   {
-    backgroundColor: "#fff",
-    boxShadow: "0 1px 0 0 rgba(0, 0, 0, 0.1)",
+    backgroundColor: "#EEECF1",
+    borderRadius: "8px",
     display: "grid",
     gridGap: "16px",
     gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
     marginBottom: "32px",
-    padding: "32px 0",
-    position: ["sticky", "-webkit-sticky"],
+    padding: "32px",
     top: 0,
     width: "100%",
   },
