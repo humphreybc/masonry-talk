@@ -19,7 +19,7 @@
     "react-dom": "^16.8.6",
     "react-test-renderer": "^16.8.6",
     "ts-node": "^8.0.3",
-    "typescript": "3.3.4000",
+    "typescript": "^3.4.1",
     "webpack": "^4.20.2"
   },
   "dependencies": {
