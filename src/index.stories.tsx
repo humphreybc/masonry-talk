@@ -8,7 +8,29 @@ import { Grid } from "./examples/Grid";
 import { Houdini } from "./examples/Houdini";
 import { Table } from "./examples/Table";
 import { DocumentTitle } from "./util/DocumentTitle";
-import { TextSlide } from "./util/TextSlide";
+import { SlideBulletList } from "./util/SlideBulletList";
+import { SlideContainer } from "./util/SlideContainer";
+import { SlideTitle } from "./util/SlideTitle";
+
+storiesOf("Slides", module)
+  .add("Intro", () => (
+    <SlideContainer>
+      <SlideTitle text="The State of CSS Masonry in 2019" />
+    </SlideContainer>
+  ))
+  .add("Constraints", () => (
+    <SlideContainer>
+      <SlideBulletList
+        items={[
+          "Brick layout like Pinterest",
+          "Left-to-right order",
+          "Dynamic width / height items",
+          "Responsive for mobile",
+          "CSS only",
+        ]}
+      />
+    </SlideContainer>
+  ));
 
 storiesOf("Examples", module)
   .add("Flex", () => (
@@ -47,5 +69,3 @@ storiesOf("Examples", module)
       <Table items={generateItems(25)} />
     </>
   ));
-
-storiesOf("Slides", module).add("Intro", () => <TextSlide text="The State of CSS Masonry in 2019" />);
