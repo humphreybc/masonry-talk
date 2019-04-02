@@ -3,6 +3,11 @@ import { generateItems } from "src/util/generateItems";
 import { media } from "typestyle";
 import { styled } from "typestyle-react";
 import { Header } from "../util/Header";
+import masonry from "!file-loader!../worklets/masonry.js";
+
+if ("layoutWorklet" in CSS) {
+  CSS.layoutWorklet.addModule(masonry);
+}
 
 export const Houdini: React.FC = () => (
   <>
