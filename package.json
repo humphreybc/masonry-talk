@@ -18,15 +18,13 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-test-renderer": "^16.8.6",
-    "ts-node": "^8.0.3",
-    "typescript": "^3.4.1",
-    "webpack": "^4.20.2"
-  },
-  "dependencies": {
     "react-resize-detector": "^4.0.5",
     "tslib": "^1.9.3",
     "typestyle": "^2.0.1",
-    "typestyle-react": "^2.5.0"
+    "typestyle-react": "^2.5.0",
+    "ts-node": "^8.0.3",
+    "typescript": "^3.4.1",
+    "webpack": "^4.20.2"
   },
   "prettier": {
     "printWidth": 128,
