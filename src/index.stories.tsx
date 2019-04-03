@@ -1,3 +1,4 @@
+import pinterest from "!file-loader!./images/pinterest.png";
 import { storiesOf } from "@storybook/react";
 import React from "react";
 import { Columns } from "./examples/Columns";
@@ -17,6 +18,9 @@ storiesOf("Talk", module)
       <DocumentTitle title="Title" />
       <SlideTitle text="The State of CSS Masonry in 2019" />
     </SlideContainer>
+  ))
+  .add("Screenshot", () => (
+    <img src={pinterest} style={{ borderRadius: "8px", boxShadow: "0 0 0 1px rgba(0, 0, 0, 0.1)" }} width="100%" />
   ))
   .add("Constraints", () => (
     <SlideContainer>

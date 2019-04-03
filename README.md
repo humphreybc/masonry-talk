@@ -2,24 +2,6 @@
 
 A talk for SydCSS about the state of masonry layouts in 2019.
 
-## Talk checklist
-
-- [x] Flex example
-- [x] Grid example
-- [x] Columns example
-- [x] Custom columns
-- [x] CSS Houdini example
-- [x] Title slide components
-- [x] Checklist components
-- [x] Intro and summary slides
-- [ ] Screenshot of Pinterest
-- [ ] Outro slide with name, website, @hidovetail
-
-## Other techniques
-
-- Using table and setting colspan (similar to grid).
-- Using position absolute and setting width / height appropriately.
-
 ## Constraints
 
 1. Items must be in a ‘brick’ layout, like Pinterest.
@@ -27,23 +9,10 @@ A talk for SydCSS about the state of masonry layouts in 2019.
 1. The width and height of each item is dynamic, not fixed.
 1. The number of columns adjusts based on the container width.
 
-## Notes
+## Other techniques
 
-- CSS Houdini aims to give developers direct access to the browser’s CSS engine.
-- You can define custom CSS features that run efficiently within the browser’s native rendering pipeline.
-- Definitions are in JS files called ‘worklets’.
-- Worklets have limited scope and functionality and can’t access the DOM.
-- There are multiple parts to Houdini – the Layout API, Paint API, Parser API, etc.
-
-## Talk prep
-
-- [ ] Import houdini masonry worklet locally
-- [ ] Comment out all CSS and JS enhancements
-- [ ] Default columns count to 4 for Columns and Houdini
-- [ ] Use Firefox / Safari for non-Houdini support
-- [ ] Show screenshot of Pinterest
-- [ ] Hide file tree in VSCode
-- [ ] Zoom in in VSCode
+- Using table and setting colspan (similar to grid).
+- Using position absolute and setting width / height appropriately.
 
 ## Houdini Pros
 
@@ -72,3 +41,35 @@ A talk for SydCSS about the state of masonry layouts in 2019.
 - [CSS Houdini Experiments](https://css-houdini.rocks/)
 - [Houdini sample masonry layout](https://googlechromelabs.github.io/houdini-samples/layout-worklet/masonry/)
 - [Is Houdini ready yet?](https://ishoudinireadyyet.com/)
+- [Houdini Spellbook](http://houdini.glitch.me/)
+
+## Talk notes
+
+- CSS Houdini aims to give developers direct access to the browser’s CSS engine.
+- You can define custom CSS features that run efficiently within the browser’s native rendering pipeline.
+- Definitions are in JS files called ‘worklets’.
+- Worklets have limited scope and functionality and can’t access the DOM.
+- There are multiple parts to Houdini – the Layout API, Paint API, Parser API, etc.
+
+### Component checklist
+
+- [x] Flex example
+- [x] Grid example
+- [x] Columns example
+- [x] Custom columns
+- [x] CSS Houdini example
+- [x] Title slide components
+- [x] Checklist components
+- [x] Intro and summary slides
+- [x] Screenshot of Pinterest
+- [x] Outro slide with name, website, @hidovetail
+
+### Misc prep
+
+- [x] Import houdini masonry worklet locally
+- [ ] Comment out all CSS and JS enhancements
+- [ ] Default columns count to 4 for Columns and Houdini
+- [ ] Use Firefox / Safari for non-Houdini support
+- [ ] Show screenshot of Pinterest
+- [ ] Hide file tree in VSCode
+- [ ] Zoom in in VSCode
