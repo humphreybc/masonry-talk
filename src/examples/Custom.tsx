@@ -6,7 +6,7 @@ import { Header } from "../util/Header";
 
 const GAP = 32;
 
-export const CustomColumns: React.FC = () => {
+export const Custom: React.FC = () => {
   const [containerWidth, setContainerWidth] = useState(0);
   const minColumnWidth = 200;
   const margin = GAP / 2;
@@ -27,7 +27,7 @@ export const CustomColumns: React.FC = () => {
             ))}
           </div>
         ))}
-        <ReactResizeDetector handleWidth onResize={width => setContainerWidth(width)} />
+        <ReactResizeDetector handleWidth onResize={({ width }) => setContainerWidth(width)} />
       </Container>
     </>
   );
