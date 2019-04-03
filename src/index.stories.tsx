@@ -2,6 +2,7 @@ import pinterest from "!file-loader!./images/pinterest.png";
 import { storiesOf } from "@storybook/react";
 import React from "react";
 import { Columns } from "./examples/Columns";
+// import { Custom } from "./examples/Custom";
 import { Flex } from "./examples/Flex";
 import { Grid } from "./examples/Grid";
 import { Houdini } from "./examples/Houdini";

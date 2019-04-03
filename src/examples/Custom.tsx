@@ -29,7 +29,7 @@ export const Custom: React.FC = () => {
             ))}
           </div>
         ))}
-        <ReactResizeDetector handleWidth onResize={({ width }) => setContainerWidth(width)} />
+        <ReactResizeDetector handleWidth onResize={width => setContainerWidth(width)} />
       </Container>
     </>
   );
