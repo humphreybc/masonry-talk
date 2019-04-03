@@ -2,11 +2,9 @@ import pinterest from "!file-loader!./images/pinterest.png";
 import { storiesOf } from "@storybook/react";
 import React from "react";
 import { Columns } from "./examples/Columns";
-import { Custom } from "./examples/Custom";
 import { Flex } from "./examples/Flex";
 import { Grid } from "./examples/Grid";
 import { Houdini } from "./examples/Houdini";
-import { Table } from "./examples/Table";
 import { DocumentTitle } from "./util/DocumentTitle";
 import { SlideBulletList } from "./util/SlideBulletList";
 import { SlideContainer } from "./util/SlideContainer";
@@ -48,12 +46,6 @@ storiesOf("Talk", module)
       <Columns />
     </>
   ))
-  .add("Custom", () => (
-    <>
-      <DocumentTitle title="Custom" />
-      <Custom />
-    </>
-  ))
   .add("Grid", () => (
     <>
       <DocumentTitle title="Grid" />
@@ -80,12 +72,18 @@ storiesOf("Talk", module)
       <Houdini />
     </>
   ))
-  .add("Table", () => (
-    <>
-      <DocumentTitle title="Table" />
-      <Table />
-    </>
-  ))
+  // .add("Custom", () => (
+  //   <>
+  //     <DocumentTitle title="Custom" />
+  //     <Custom />
+  //   </>
+  // ))
+  // .add("Table", () => (
+  //   <>
+  //     <DocumentTitle title="Table" />
+  //     <Table />
+  //   </>
+  // ))
   .add("Outro", () => (
     <SlideContainer>
       <DocumentTitle title="Outro" />
