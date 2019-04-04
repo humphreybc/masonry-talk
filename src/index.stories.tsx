@@ -6,6 +6,7 @@ import { Columns } from "./examples/Columns";
 import { Flex } from "./examples/Flex";
 import { Grid } from "./examples/Grid";
 import { Houdini } from "./examples/Houdini";
+// import { Table } from "./examples/Table";
 import { DocumentTitle } from "./util/DocumentTitle";
 import { SlideBulletList } from "./util/SlideBulletList";
 import { SlideContainer } from "./util/SlideContainer";
